@@ -53,6 +53,6 @@ python3 setup.py install --root=%{buildroot} --prefix=usr --optimize=1
 
 
 %changelog
-* Wed Nov 6 2019 Shaun Assam <sassam@fedoraproject.org> - 1.0.16-2
+* Wed Nov 6 2019 Shaun Assam <sassam [at] fedoraproject.org> - 1.0.16-2
 - Update specs for Python 3
 
