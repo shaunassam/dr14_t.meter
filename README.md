@@ -10,3 +10,6 @@ I've largely tested this application and it has always returned results identica
 
 
 For more info visit: http://dr14tmeter.sourceforge.net
+
+To install on Fedora, EL7, EL8 using COPR, run:
+$ sudo dnf copr enable sassam/dr14_tmeter
