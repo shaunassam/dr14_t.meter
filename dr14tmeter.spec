@@ -1,6 +1,6 @@
 Name: dr14_t.meter
 Version: 1.0.16
-Release: 2
+Release: 4
 Summary: Compute the dynamic range DR14 value of the givens audio files
 BuildArch: noarch
 
@@ -53,6 +53,8 @@ python3 setup.py install --root=%{buildroot} --prefix=usr --optimize=1
 
 
 %changelog
+* Mon Sept 18 2023 Shaun Assam <sassam [at] fedoraproject.org> - 1.0.16-4
+- Rebuild for EL9, Fedora 37 and Fedora 38
 * Wed Nov 6 2019 Shaun Assam <sassam [at] fedoraproject.org> - 1.0.16-2
 - Update specs for Python 3
 
