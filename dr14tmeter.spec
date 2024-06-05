@@ -7,7 +7,7 @@ BuildArch: noarch
 Group: Applications/Sound
 License: GPLv3	
 URL: http://dr14tmeter.sourceforge.net	
-Source: https://github.com/simon-r/dr14_t.meter/archive/v1.0.16.tar.gz
+Source: https://github.com/shaunassam/dr14_t.meter/archive/refs/tags/v1.0.16.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: python3
