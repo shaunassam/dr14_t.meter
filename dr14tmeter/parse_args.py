@@ -91,9 +91,9 @@ def parse_args():
     parser.add_argument("-q", "--query",
                         nargs="*",
                         dest="query",
-                        help="""query the database. Options: [-q] [-q top #nr] [-q worst #nr] \n 
-                                             [-q top_alb #nr] [-q worst_alb #nr] [-q top_art #nr #mt] 
-                                             [-q hist] [-q evol] [-q codec] \n 
+                        help="""query the database. Options: [-q] [-q top #nr] [-q worst #nr] \n
+                                             [-q top_alb #nr] [-q worst_alb #nr] [-q top_art #nr #mt]
+                                             [-q hist] [-q evol] [-q codec] \n
                                              [-q help] """ )
 
     parser.add_argument("-d", "--dr_database",
@@ -159,7 +159,7 @@ def parse_args():
                         dest="version",
                         help="print the current version and exit")
 
-    parser.add_argument("--tag", 
+    parser.add_argument("--tag",
                         action="store_true",
                         dest="tag",
                         help="Write the DR to the tag of the input files")
