@@ -79,13 +79,11 @@ def scan_dir_list(subdirlist, options, out_dir):
         print_msg("\n------------------------------------------------------------ ")
         print_msg("> Scan Dir: %s \n" % cur_dir)
 
-        # Multithreading disabled for now, since the feature is broken with Python 3.14
-        # XXX poke me if you know how to fix this.
-        # if options.disable_multithread:
-        r = dr.scan_dir(cur_dir)
-        # else:
-        # cpu = get_thread_cnt()
-        # r = dr.scan_mp(cur_dir, cpu)
+        if options.disable_multithread:
+            r = dr.scan_dir(cur_dir)
+        else:
+            cpu = get_thread_cnt()
+            r = dr.scan_mp(cur_dir, cpu)
 
         if options.tag:
             tagger = Tagger()
