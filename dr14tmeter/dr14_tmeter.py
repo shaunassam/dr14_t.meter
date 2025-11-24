@@ -27,6 +27,8 @@ from dr14tmeter.dr14_utils import *
 from dr14tmeter.out_messages import *
 from dr14tmeter.dr14_config import *
 from dr14tmeter.database_utils import *
+from multiprocessing import context, freeze_support, SimpleQueue
+from multiprocessing import get_start_method, set_start_method
 
 import os
 import subprocess
@@ -189,5 +191,9 @@ def main():
     return r
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+    freeze_support()
+    if len(sys.argv) > 1:
+        set_start_method(sys.argv[1])
+    print(f"using start method: {get_start_method()}")
     main()
