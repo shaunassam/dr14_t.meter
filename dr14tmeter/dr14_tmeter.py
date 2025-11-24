@@ -193,6 +193,7 @@ def main():
 
 if __name__ == "__main__":
     freeze_support()
+    multiprocessing.set_start_method('spawn', force=True)
     if len(sys.argv) > 1:
         set_start_method(sys.argv[1])
     print(f"using start method: {get_start_method()}")
