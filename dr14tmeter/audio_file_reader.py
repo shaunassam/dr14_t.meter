@@ -156,6 +156,7 @@ class AudioFileReader:
         return  " -i \"%s\" -b 16 -ar 44100 -y \"%s\" -loglevel quiet " % ( file_name , tmp_file )
 
 
+
 class Mp3FileReader( AudioFileReader ):
     def get_cmd(self):
         return "lame"
@@ -221,3 +222,4 @@ class WavFileReader( AudioFileReader ):
 
     def get_cmd_options( self , file_name , tmp_file ):
         return ""
+
