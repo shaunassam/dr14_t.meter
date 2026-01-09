@@ -9,3 +9,5 @@ build/
 *.json
 .pydevproject
 .project
+.DS_Store
+._.DS_Store
